@@ -1,0 +1,676 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Merienda+One&display=swap" rel="stylesheet">
+     <title>Akshay Tomar - Portfolio</title>
+
+    <style>
+      html, body { 
+        color: #434242;
+        font-family: 'Istok Web', sans-serif;
+        height: min-content !important;
+        margin: 0 !important;
+        padding: 0px !important;
+        position: relative;
+        
+      }
+      .container , .container-fluid{
+        margin: 0 !important;
+        padding: 0 !important;
+        
+      }
+      .jumbotron{
+            background:  no-repeat center right fixed url(img/a1.jpg);
+            background-size: cover;
+            height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            
+            
+      }
+      .contact{
+        background-color: #575555;
+        border-radius: 15px;
+        
+        width: 100%;
+        height: 250px;
+      }
+      .contact-section{
+        
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+        
+      }
+      .overlay{
+          background-color: #a32222;
+          position: absolute;
+          top: 0px;
+          bottom: 0px; 
+          left: 0px;
+          right: 0px;
+          opacity: 0.75; 
+          filter:alpha(opacity=75);
+          z-index: 2;
+          height: 100vh;
+        }
+      hr{
+        border: 1px solid #2c2c2c;
+      }
+      
+      h1{
+          color: white;
+          font-weight: bold;
+          border-bottom: 2px solid white;
+          z-index: 15;
+          text-align: center;
+          position: relative;
+          top: 35vh;
+          font-family: 'Merienda One', cursive !important;
+          
+          
+      }
+      .abc{
+        position: absolute;
+        top: 20%;
+        left: 11%;
+        padding: 10px;
+        display: block;
+        z-index: 10;
+      
+      }
+      .certificate-image{
+        border: 1px solid black;
+        width: 50vw;
+      }
+      .flip-box{
+        background-color: transparent;
+        
+        margin: 30px;
+      }
+      .flip-box-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 1s;
+        transform-style: preserve-3d;
+      }
+      .flip-box:hover .flip-box-inner {
+          transform: rotateY(180deg);
+        }
+        .flip-box-front, .flip-box-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        .flip-box-front {
+          background-color: #bbb;
+          color: black;
+          
+          
+        }
+
+        .flip-box-back {
+          background-color: white;
+          color: black;
+          transform: rotateY(180deg);
+          padding: 10% 10px 10px 10px;
+          border: 1px solid black;
+         
+        }
+     
+     
+        .btn1{
+          border: 2px solid rgb(3, 85, 10);
+          border-radius: 10px;
+          z-index: 15;
+          position: absolute;
+          top: 50vh;
+          font-weight: bold;
+        }
+        .clear{
+          clear: both;
+        }
+        .nav-link{
+          background-color: #434242;
+          padding: 20px;
+          margin: 2px auto 2px auto;
+          text-align: center;
+          color: white;
+          line-height: 150%;
+        }
+        .nav-link:active{
+          background-color: #000000 !important;
+          
+        }
+        .nav-link:hover{
+          background-color: #2c2c2c;
+        }
+        
+        .navbar-toggler{
+          background-color: #2c2c2c;
+        }
+        #mynav{
+          position: relative;
+          left: -20px;
+          background-color: transparent;
+          width: 100%;
+          
+        }
+        .image{
+          float: left;
+          margin: 15px;
+          border-bottom: 2px solid black;
+          height: 600px;
+        }
+        .progress{
+          height: 20px;
+        }
+        .connect-image{
+            width:10vw;
+            height: 10vw;
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 17px;
+        }
+        .contact-section a:any-link{
+          color:white;
+          text-decoration: none;
+        }
+
+        
+        
+        
+        
+        
+
+      @media only screen 
+        and (min-width : 320px) 
+        {
+          .connect-image{
+            width:10vw;
+            height: 10vw;
+            
+          }
+
+          .jumbotron{
+            background-image:url("img/a4.jpg");
+          }
+          h1{
+            font-size: 200%;
+          }
+          .btn1{
+            width: 200px;
+            height: 50px;
+          }
+          .image{
+            height: 310px;
+          }
+          .project-image{
+            height: 200px;
+          }
+          
+          h3{
+            font-size: 17px;
+          }
+          .flip-box{
+            width: 202px;
+            height: 202px;
+          }
+          
+        
+
+      }
+      @media only screen 
+        and (min-width : 768px) 
+         {
+          .connect-image{
+            width:7vw;
+            height: 7vw;
+          }
+          .jumbotron{
+            background-image: url("img/a3.jpg");
+          }
+          h1{
+            font-size: 300%;
+          }
+          .btn1{
+            width: 220px;
+            height: 50px;
+          }
+          #mynav{
+          background-color: #ffffff;
+          }
+          .image{
+            height: 400px;
+          }
+          .move{
+            position: relative;
+            top: -400px;
+          }
+          .project-image{
+            height: 20vw;
+            border-right: 1 px solid black;
+            border-bottom: 1 px solid black;
+
+          }
+          
+          h3{
+            font-size: 20px;
+          }
+          .flip-box{
+            width: 20vw;
+            height: 20vw;
+          }
+          .flip-box-back {
+          font-size: small;
+        }
+     
+          
+
+      }
+      @media only screen 
+        and (min-width : 1224px) {
+          .connect-image{
+            width:4vw;
+            height: 4vw;
+            
+        }
+          .jumbotron{
+            background-image:  url("img/a1.jpg");
+          }
+          h1{
+            font-size: 400%;
+          }
+          .btn1{
+            width: 250px;
+            height: 50px;
+          }
+          #mynav{
+          background-color: #ffffff;
+        }
+        .image{
+            height: 600px;
+          }
+          .project-image{
+            height: 280px;
+            
+          }
+          
+          h3{
+            font-size: 25px;
+          }
+          .flip-box{
+            width: 282px;
+            height: 282px;
+          }
+          .flip-box-back {
+          font-size:large;
+        }
+          
+        
+
+      }
+
+      </style>
+  </head>
+  <body data-spy="scroll" data-target="#mynav" >
+    <div class="container-fluid">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid ">
+          <h1 >Akshay Tomar</h1>
+          <div class="row justify-content-center">
+              <button  class="btn btn-success btn1" id="downloadResume">Download Resume</button>
+          </div>
+          
+        </div>
+        <div class="overlay"></div>
+      </div>
+    </div>
+
+    <div class="container-fluid ">
+      <div class="col-md-1 sticky-top">
+        <nav class="  navbar navbar-expand-md navbar-dark nav-bg  " id="mynav">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavbar" >
+            <span class="navbar-toggler-icon bg-dark"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="menuNavbar">
+            <ul class="navbar-nav  flex-column">
+              <li class="nav-item ">
+                <a class="nav-link" href="#home">Home </span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#education">Education</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#skills">Skills</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#projects">Projects</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#certificates">Certificates</span></a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="#contact">Contact</span></a>
+              </li>
+            </ul>
+          </div>
+          
+        </nav>
+      </div>
+      
+      <div class="col-md-12  move">
+        <div class="row" id="home">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <img src="img/a2.jpg" class="image" alt="Image Not Found" title="Akshay">
+          </div>
+          
+          <div class="col-md-6 text-center  pt-5 pl-2">
+            <h2><u><b>Details</b></u></h2><br>
+            <p><b>Name : </b>Akshay Tomar</p>
+            <p><b>Date Of Birth : </b>21st September , 1999</p>
+            <p><b>Location : </b>Baraut</p><br>
+            <h2><u><b>About</b></u></h2><br>
+            <p>Hello World ..! I am Akshay. A full stack web developer.
+              Currently pursuing my B.Tech in Computer Science Enginnering And Information Technology
+              from ABES Enginnering College, Ghaziabad. I love learning and exploring new technologies and working on them
+              to create new and innovative stuff ..!!</p>
+          </div>
+
+        </div>
+        <hr>
+        <div class="clear"></div>
+        <div class="text-center mt-5" id="education">
+          <h2><u><b>Education</b></u></h2><br>
+          <p>&diamondsuit; &nbsp;July 2018 - <sup>*</sup>current<br>ABES Enginnering College , Ghaziabad.<br><b>Course :</b> B.Tech.</p><br>
+          <p>&diamondsuit; &nbsp;April 2017 - August 2017<br>Doon Defence Academy ,  Dehradun.<br></p><br>
+          <p>&diamondsuit; &nbsp;July 2005 - March 2017<br>Christu Jyothi Convent Sen. Sec. School , Baraut.<br><b>Course :</b>Schooling</p><br>
+
+        </div>
+        <hr>
+
+        <div class="text-center mt-5" id="skills">
+          <h2><u><b>Skills</b></u></h2><br>
+          <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+              <div class="progress ml-auto mr-auto">
+                <div class="progress-bar" style="width:70%">Java</div>
+              </div>
+              <br>
+              
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar bg-info" style="width:60%">C programming language</div>
+              </div>
+              <br>
+              
+              <div class="progress  ml-auto mr-auto">
+                  <div class="progress-bar bg-success" style="width:50%">Python</div>
+              </div>
+              <br>
+              
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar bg-danger" style="width:90%">HTML</div>
+              </div>
+              <br>
+              
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar bg-warning" style="width:90%">CSS</div>
+              </div>
+              <br>
+              
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar" style="width:55%">Javascript</div>
+              </div>
+              <br>
+              
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar bg-info" style="width:50%">JQuery</div>
+              </div>
+              <br>
+              
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar bg-success" style="width:70%">Bootstrap</div>
+              </div>
+              <br>
+
+              <div class="progress ml-auto mr-auto">
+                <div class="progress-bar bg-danger" style="width:60%">PHP</div>
+              </div>
+              <br>
+
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar bg-warning" style="width:65%">MySql</div>
+              </div>
+              <br>
+
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar " style="width:80%">MS-Office</div>
+              </div>
+              <br>
+
+              <div class="progress ml-auto mr-auto">
+                  <div class="progress-bar bg-info" style="width:60%">Photoshop</div>
+              </div><br>
+            </div>
+          </div>
+
+        </div>
+        <hr>
+
+        <div class="text-center mt-5" id="projects">
+          <h2><u><b>Projects</b></u></h2><br>
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10  text-center row  ">
+
+
+              <div class="col-md-4 ">
+                <div class="flip-box mx-auto">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/porfolio.jpg" alt="Portfolio Project" class="project-image" id="portfolio-image"><br>
+                    </div>
+                    <div class="flip-box-back" id="portfolio">
+                      <p>This is my Personal Portfolio Website. A lot of info is available here about me .</p>
+                      <a  href="#" target="_blank">View On Github</a>
+                    </div>
+                    
+                  </div>
+                  <h3>Personal Portfolio</h3>
+
+                </div>
+                
+              </div>
+              <br><br>
+
+
+              <div class="col-md-4" >
+                <div class="flip-box mx-auto">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/secret-diary.jpg" alt="secret-diary Project" class="project-image" id="secret-diary-image"><br>
+                    </div>
+                    <div class="flip-box-back" >
+                      <p>A Password protected personal diary where the users can store their thoughts and secret.</p>
+                      <a  href="#" target="_blank">View On Github</a>
+                    </div>
+                  </div>
+                  <h3>My Secret Diary</h3>
+                </div>
+              </div>
+              <br><br>
+              <div class="col-md-4 " >
+                <div class="flip-box mx-auto">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="img/amp.jpg" alt="secret-diary Project" class="project-image" id="secret-diary-image"><br>
+                    </div>
+                    <div class="flip-box-back" >
+                      <p>A Better and effective way to manage attendance of students on an online portal.</p>
+                      <a  href="#" target="_blank">View On Github</a>
+                    </div>
+                  </div>
+                  <h3>Attendance Management Portal</h3>
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          
+        </div>
+        <br><br><br><br><br><br>
+        <hr>
+
+        <div class="text-center mt-5 justify-content-center" id="certificates">
+          <h2><u><b>Certificates</b></u></h2><br>
+          <p><b>Certificate : 1</b></p>
+          <img src="img/c16.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Udemy<br><b>Presented for : </b>Full Stack Web Developer Course<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+
+          <p><b>Certificate : 2</b></p>
+          <img src="img/c1.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Cambridge Certification Authority<br><b>Presented for : </b>HTML<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 3</b></p>
+          <img src="img/c2.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Cambridge Certification Authority<br><b>Presented for : </b>CSS<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 4</b></p>
+          <img src="img/c3.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Cambridge Certification Authority<br><b>Presented for : </b>Javascript<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 5</b></p>
+          <img src="img/c4.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Cambridge Certification Authority<br><b>Presented for : </b>jQuery<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 6</b></p>
+          <img src="img/c5.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Cambridge Certification Authority<br><b>Presented for : </b>PHP<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 7</b></p>
+          <img src="img/c15.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Cambridge Certification Authority<br><b>Presented for : </b>MySQL<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 8</b></p>
+          <img src="img/c6.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Innovative Idea Infotech<br><b>Presented for : </b>Cyber Security Awareness Program<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 9</b></p>
+          <img src="img/c7.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>ABES Engineering College<br><b>Presented for : </b>OOPs Using Java<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+
+          <p><b>Certificate : 10</b></p>
+          <img src="img/c8.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>CodeChef<br><b>Presented for : </b>Participation in COVID-19 Hackathon<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 11</b></p>
+          <img src="img/c9.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>NPTEL Online Certification<br><b>Presented for : </b>Developing Soft Skills And Personality<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 12</b></p>
+          <img src="img/c10.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>NPTEL Online Certification<br><b>Presented for : </b>Enhancing Soft Skills And Personality<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 13</b></p>
+          <img src="img/c11.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>NPTEL Online Certification<br><b>Presented for : </b>Patent Law For Engineers And Scientists<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 14</b></p>
+          <img src="img/c12.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>MAD by BTD<br><b>Presented for : </b>Participation in Marathon<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 15</b></p>
+          <img src="img/c13.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Solo Learn<br><b>Presented for : </b>C Tutorial Course<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+          <p><b>Certificate : 16</b></p>
+          <img src="img/c14.jpg" alt="cerificate" class="certificate-image">
+          <p><br><b>Authority : </b>Solo Learn<br><b>Presented for : </b>Java Tutorial Course<br><b>Validity : </b>Lifetime</p>
+          <br><br><br><br>
+
+              
+          
+        </div>
+        <br><br><hr><br>
+
+        <div class="text-center mt-5 justify-content-center" id="contact">
+          <h2><u><b>Contact Me</b></u></h2><br><P>Wanna Work Together ..? You Can Find Me Here ..</P>
+         
+
+          <div class="contact">
+            <div class="container-fluid  contact-section">
+            
+              <a href="https://www.facebook.com/Jatt.AkshayTomar" target="_blank"><img src="img/fb.png" alt="facebook" class="connect-image"><br>Facebook</a>
+              <a href="https://www.instagram.com/akshaytomar893/" target="_blank"><img src="img/insta.jpg" alt="instagram" class="connect-image"><br>Instagram</a>
+              <a href="https://twitter.com/Akshaytomar_893" target="_blank"><img src="img/twitter.png" alt="twitter" class="connect-image"><br>Twitter</a>
+              <a href="https://github.com/Akshaytomar893" target="_blank"><img src="img/github2.jpg" alt="github" class="connect-image"><br>Github</a>
+              <a href="https://www.linkedin.com/in/akshaytomar893/" target="_blank"><img src="img/linkedin.jpg" alt="LinkedIn" class="connect-image"><br>LinkedIn</a>
+            
+            
+            </div>
+            <p class="mt-3 text-light" >or mail me here :<br><img src="img/mail.png " class="connect-image">akshaytomar891@gmail.com</p>
+          </div>
+          
+          
+          
+
+      </div>
+      
+    </div>
+    <div class="container-fluid footer bg-dark text-center text-light">
+      <p class="py-2">Developed By Akshay Tomar&nbsp;&nbsp;&#128522;&#128157;</p>
+    </div>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#downloadResume").click(function(e){
+      e.preventDefault();
+      window.open("files/Resume.pdf" , "_blank")
+    });
+
+    
+    
+    
+  </script>
+
+
+  </body>
+</html>
