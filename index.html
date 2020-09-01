@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Merienda+One&display=swap" rel="stylesheet">
      <title>Akshay Tomar - Portfolio</title>
+     <link rel="icon" href="img/icon1.ico" type="image/icon type">
 
     <style>
       html, body { 
@@ -325,6 +326,27 @@
         
 
       }
+      .black-block{
+        height: 60px;
+        width: 60px;
+        background-color: black !important;
+        z-index: 6666646 !important;
+        position: absolute;
+        top: 90vh;
+        left: 85vw;
+      }
+      @keyframes arrow{
+        from {top: 6px;}
+        to {top: -6px;}
+      }
+      #arrow{
+        position: absolute;
+        animation: arrow;
+        animation-duration: .6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate-reverse;
+      }
 
       </style>
   </head>
@@ -337,8 +359,16 @@
               <button  class="btn btn-success btn1" id="downloadResume">Download Resume</button>
           </div>
           
+          
         </div>
-        <div class="overlay"></div>
+        <div class="overlay">
+          
+        </div>
+        <a href="#home">
+          <div class="black-block">
+            <img src="img/arrow.png" width="60px" height="60px" id="arrow">
+          </div>
+        </a>
       </div>
     </div>
 
@@ -488,7 +518,7 @@
                       <img src="img/porfolio.jpg" alt="Portfolio Project" class="project-image" id="portfolio-image"><br>
                     </div>
                     <div class="flip-box-back" id="portfolio">
-                      <p>This is my Personal Portfolio Website. A lot of info is available here about me .</p>
+                      <p>This is my Personal Portfolio Website. </p>
                       <a  href="#" target="_blank">View On Github</a>
                     </div>
                     
@@ -653,7 +683,7 @@
       </div>
       
     </div>
-    <div class="container-fluid footer bg-dark text-center text-light mt-2">
+    <div class="container-fluid footer bg-dark text-center text-light">
       <p class="py-2">Developed By Akshay Tomar&nbsp;&nbsp;&#128522;&#128157;</p>
     </div>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
