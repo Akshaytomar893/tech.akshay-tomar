@@ -20,8 +20,12 @@
         margin: 0 !important;
         padding: 0px !important;
         position: relative;
+        scroll-behavior: smooth;
+        
+      
         
       }
+      
       .container , .container-fluid{
         margin: 0 !important;
         padding: 0 !important;
@@ -54,6 +58,7 @@
         
         
       }
+      
       .overlay{
           background-color: #a32222;
           position: absolute;
@@ -94,6 +99,11 @@
       .certificate-image{
         border: 1px solid black;
         width: 50vw;
+      }
+      .certificate-image:hover{
+        transform: scale(1.1);
+        transition-duration: 0.8s;
+        
       }
       .flip-box{
         background-color: transparent;
@@ -192,9 +202,26 @@
           color:white;
           text-decoration: none;
         }
-
-        
-        
+        @keyframes top_btn_img{
+        from {top: 6px;}
+        to {top: -6px;}
+      }
+        #top_btn_img{
+          position: relative;
+          width: 60px;
+          height: 60px;
+          transform: rotate(180deg);
+          animation: top_btn_img;
+          animation-duration: .6s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          animation-direction: alternate-reverse;
+        }
+        #top_btn{
+        position: absolute;
+        top: 90vh;
+      }
+              
         
         
         
@@ -202,6 +229,11 @@
       @media only screen 
         and (min-width : 320px) 
         {
+          
+          #top_btn_img{
+          width: 30px;
+          height: 30px;
+        }
           .connect-image{
             width:10vw;
             height: 10vw;
@@ -232,6 +264,15 @@
             width: 202px;
             height: 202px;
           }
+          .black-block{
+          height: 30px;
+          width: 30px;
+          top: 95vh;
+        }
+        #arrow{
+          width:30px;
+          height:30px;
+        }
           
         
 
@@ -239,6 +280,19 @@
       @media only screen 
         and (min-width : 768px) 
          {
+          .black-block{
+        height: 50px;
+        width: 50px;
+        top: 90vh;
+      }
+      #arrow{
+        width:50px;
+        height:50px;
+      }
+          #top_btn_img{
+          width: 45px;
+          height: 45px;
+        }
           .connect-image{
             width:7vw;
             height: 7vw;
@@ -286,6 +340,21 @@
       }
       @media only screen 
         and (min-width : 1224px) {
+
+          .black-block{
+        height: 70px;
+        width: 70px;
+
+        top: 89vh;
+      }
+      #arrow{
+        width:70px;
+        height:70px;
+      }
+          #top_btn_img{
+          width: 60px;
+          height: 60px;
+        }
           .connect-image{
             width:4vw;
             height: 4vw;
@@ -327,19 +396,19 @@
 
       }
       .black-block{
-        height: 60px;
-        width: 60px;
+       
         background-color: black !important;
         z-index: 6666646 !important;
         position: absolute;
-        top: 90vh;
-        left: 85vw;
+        
+        left: 45%;
       }
       @keyframes arrow{
         from {top: 6px;}
         to {top: -6px;}
       }
       #arrow{
+        
         position: absolute;
         animation: arrow;
         animation-duration: .6s;
@@ -347,11 +416,12 @@
         animation-timing-function: ease-in-out;
         animation-direction: alternate-reverse;
       }
+      
 
       </style>
   </head>
   <body data-spy="scroll" data-target="#mynav" >
-    <div class="container-fluid">
+    <div class="container-fluid" id="top">
       <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid ">
           <h1 >Akshay Tomar</h1>
@@ -364,9 +434,9 @@
         <div class="overlay">
           
         </div>
-        <a href="#home">
-          <div class="black-block">
-            <img src="img/arrow.png" width="60px" height="60px" id="arrow">
+        <a href="#home" >
+          <div class="black-block ">
+            <img src="img/arrow.png"  id="arrow">
           </div>
         </a>
       </div>
@@ -402,6 +472,7 @@
           </div>
           
         </nav>
+        <a class="btn btn-success btn-sm " id="top_btn" href="#top"><img src="img/arrow.png"  id="top_btn_img"></a>
       </div>
       
       <div class="col-md-12  move">
